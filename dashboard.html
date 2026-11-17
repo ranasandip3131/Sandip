@@ -41,8 +41,13 @@
         placeholder="2082">
 
       <label for="pdfFile">Select PDF</label>
-      <input type="file" id="pdfFile"
-        accept="application/pdf" required>
+      <label for="pdfFile">Select PDF or Image</label>
+<input
+  type="file"
+  id="pdfFile"
+  accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png"
+  required
+>
 
       <button type="submit" id="uploadButton">
         Upload Question Paper
