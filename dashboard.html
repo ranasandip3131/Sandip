@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Hub Nepal - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>sandip education hub nepal
+
+    <h1> Sandip Education Hub Nepal</h1>
+    <h2>Admin Dashboard</h2>
+  </header>
+
+  <main class="container">
+    <h2>Upload Question Paper of health BLE</h2>
+
+    <form id="uploadForm">
+
+      <label for="title">Question Paper of Health BLE Title</label>
+      <input type="text" id="title" required
+        placeholder="BLE Mathematics 2082">
+
+      <label for="className">Class</label>
+      <select id="className" required>
+        <option value="">Select Class</option>
+        <option value="Class 8">BLE - Class 8</option>
+        <option value="Class 10">SEE - Class 10</option>
+        <option value="Class 12">NEB - Class 12</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" required
+        placeholder="Mathematics">
+
+      <label for="year">Year</label>
+      <input type="text" id="year" required
+        placeholder="2082">
+
+      <label for="pdfFile">Select PDF</label>
+      <input type="file" id="pdfFile"
+        accept="application/pdf" required>
+
+      <button type="submit" id="uploadButton">
+        Upload Question Paper
+      </button>
+
+    </form>
+
+    <p id="message">Checking admin login...</p>
+
+<hr>
+
+<h2>Uploaded Question Papers</h2>
+
+<div id="adminPaperList">
+  <p>Loading uploaded papers...</p>
+</div>
+
+
+    <hr>
+
+    <button type="button" id="logoutButton">Logout</button>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
+

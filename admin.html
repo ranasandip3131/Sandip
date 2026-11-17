@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Hub Nepal - Admin</title>
+</head>
+
+<body>
+
+  <h1>Education Hub Nepal</h1>
+  <h2>Admin Login</h2>
+
+  <form id="loginForm" onsubmit="handleLogin(event)">
+
+    <p>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required>
+    </p>
+
+    <p>
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+    </p>
+
+    <button type="submit" id="loginButton">Login</button>
+    <button type="button" onclick="sendPasswordReset()">
+  Forgot Password?
+</button>
+
+    <p id="message">Enter your admin details.</p>
+
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase.js"></script>
+  <script src="admin.js"></script>
+
+</body>
+</html>

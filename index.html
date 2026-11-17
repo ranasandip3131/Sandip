@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sandip Rana </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#" class="logo">🎓Sandip Education Hub Nepal</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#papers">Question Papers</a>
+    <a href="#about">About</a>
+    <a href="admin.html" class="admin-btn">Admin Login</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Welcome to Sandip Education Hub Nepal</h1>
+    <p>Your Free Collection of Previous Examination Question Papers</p>
+    <p>Practice More • Revise Better • Achieve Success</p>
+    <a href="#papers" class="primary-btn">Explore Question Papers</a>
+  </div>
+</section>
+
+<section class="container" id="papers">
+  <h2>Question Paper Library</h2>
+  <p class="subtitle">Choose your examination level</p>
+
+  <div class="search-box">
+    <input type="text" id="searchInput"
+      placeholder="Search subject, paper or year...">
+  </div>
+
+  <div class="class-grid">
+    <div class="class-card">
+      <span>📘</span>
+      <h3>BLE</h3>
+      <p>Class 8 Question Papers</p>
+      <button onclick="selectClass('Class 8')">View Papers</button>
+    </div>
+
+    <div class="class-card">
+      <span>📗</span>
+      <h3>SEE</h3>
+      <p>Class 10 Question Papers</p>
+      <button onclick="selectClass('Class 10')">View Papers</button>
+    </div>
+
+    <div class="class-card">
+      <span>📕</span>
+      <h3>NEB</h3>
+      <p>Class 12 Question Papers</p>
+      <button onclick="selectClass('Class 12')">View Papers</button>
+    </div>
+  </div>
+
+  <h2 id="paperHeading">Available Question Papers</h2>
+
+  <div id="paperList" class="paper-grid">
+    <p class="empty">Question papers will appear here after uploading.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Education Hub Nepal</h2>
+  <p>
+    Education Hub Nepal is a free educational platform
+    designed to help students access previous examination
+    question papers for practice, revision and preparation.
+  </p>
+</section>
+
+<footer>
+  <h3>Education Hub Nepal</h3>
+  <p>Free Education Resources for Every Student</p>
+  <p>© 2026 Sandip Education Hub Nepal</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
